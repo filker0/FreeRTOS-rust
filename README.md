@@ -1,3 +1,15 @@
+# FreeRTOS-rust (Experimental fork)
+
+This fork of the original project is an experimental branch to see whether a more consistent wrapper that foregoes
+the Rust `Result<>` mechanism and simply returns the integer values might be easier for neophite Rust programmers
+who have been otherwise using FreeRTOS in C for over a decade.
+
+This is undertaken because the FreeRTOS-Rust crate on crates.io is over 5 years out-of-date, and I have found no
+way to successfully use the FreeRTOS_rust::Semaphore in Rust. There seem to exist no examples of most of the API
+so I'm going to go my own way (experimentally) and see what happens.
+
+------------
+
 # FreeRTOS-rust
 
 This project is based on code from [freertos.rs](https://github.com/hashmismatch/freertos.rs) and some additions to
